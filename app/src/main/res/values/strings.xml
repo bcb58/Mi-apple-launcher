@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Apple Launcher</string>
+
+    <string name="tab_home">Ana Ekran</string>
+    <string name="tab_apps">Uygulamalar</string>
+    <string name="tab_settings">Ayarlar</string>
+
+    <string name="row_favorites">Favoriler</string>
+    <string name="row_recents">Son Kullanılanlar</string>
+    <string name="row_tv_apps">TV Uygulamaları</string>
+    <string name="row_other_apps">Diğer Uygulamalar</string>
+    <string name="all_apps_title">Tüm Uygulamalar</string>
+
+    <string name="empty_title">Uygulama bulunamadı</string>
+    <string name="empty_body">Uygulamalar yüklendikçe burada görünecek.</string>
+
+    <string name="menu_open">Aç</string>
+    <string name="menu_add_favorite">Favorilere ekle</string>
+    <string name="menu_remove_favorite">Favorilerden çıkar</string>
+    <string name="menu_move_left">Sola taşı</string>
+    <string name="menu_move_right">Sağa taşı</string>
+    <string name="menu_hide">Gizle</string>
+    <string name="menu_app_info">Uygulama bilgisi</string>
+    <string name="menu_uninstall">Kaldır</string>
+    <string name="menu_cancel">Vazgeç</string>
+
+    <string name="toast_favorite_added">Favorilere eklendi</string>
+    <string name="toast_favorite_removed">Favorilerden çıkarıldı</string>
+    <string name="toast_hidden">Gizlendi — Ayarlar\'dan geri alabilirsin</string>
+    <string name="toast_cannot_open">Bu uygulama açılamadı</string>
+    <string name="toast_no_settings">Sistem ayarları açılamadı</string>
+
+    <string name="settings_title">Launcher Ayarları</string>
+    <string name="settings_wallpaper">Duvar kağıdı</string>
+    <string name="settings_ambient">Ortam arka planı</string>
+    <string name="settings_ambient_desc">Seçili uygulamanın renklerini arka plana yay</string>
+    <string name="settings_parallax">Paralaks odak efekti</string>
+    <string name="settings_parallax_desc">Kartlar odaklandığında hafifçe eğilir</string>
+    <string name="settings_clock">Saati göster</string>
+    <string name="settings_recents">Son kullanılanlar satırı</string>
+    <string name="settings_unhide">Gizlenen uygulamaları geri getir</string>
+    <string name="settings_unhide_desc">%1$d uygulama gizli</string>
+    <string name="settings_default_launcher">Varsayılan başlatıcı yap</string>
+    <string name="settings_default_launcher_desc">Sistem ayarlarında Mi Apple Launcher\'ı seç</string>
+    <string name="settings_on">Açık</string>
+    <string name="settings_off">Kapalı</string>
+    <string name="wallpaper_black">Siyah</string>
+    <string name="wallpaper_graphite">Grafit</string>
+    <string name="wallpaper_midnight">Gece Mavisi</string>
+    <string name="wallpaper_plum">Mürdüm</string>
+    <string name="wallpaper_forest">Orman</string>
+
+    <string name="cd_app_card">%1$s uygulamasını aç</string>
+    <string name="cd_settings">Ayarlar</string>
+</resources>

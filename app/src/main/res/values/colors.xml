@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Near-black, not pure black: avoids the smearing OLED/VA panels show
+         when a bright card sits on #000, and matches the tvOS backdrop. -->
+    <color name="bg_base">#FF07080A</color>
+    <color name="bg_elevated">#FF14161A</color>
+
+    <color name="text_primary">#FFF5F5F7</color>
+    <color name="text_secondary">#99EBEBF5</color>
+    <color name="text_tertiary">#5CEBEBF5</color>
+
+    <color name="accent">#FF0A84FF</color>
+    <color name="scrim_strong">#CC000000</color>
+    <color name="scrim_soft">#66000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="tab_focused">#F2F5F5F7</color>
+    <color name="tab_selected">#1FFFFFFF</color>
+    <color name="card_placeholder">#FF22242A</color>
+</resources>
