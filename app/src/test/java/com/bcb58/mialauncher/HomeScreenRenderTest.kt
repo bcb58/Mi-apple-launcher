@@ -202,6 +202,16 @@ class HomeScreenRenderTest {
         }
         assertTrue("Home tab should start selected", tabs[0].isSelected)
 
+        // The interface is Turkish regardless of the device locale.
+        assertEquals("Ana Ekran", tabs[0].text.toString())
+        assertEquals("Uygulamalar", tabs[1].text.toString())
+        assertEquals("Ayarlar", tabs[2].text.toString())
+        val shelfTitles = (0 until rows.childCount).map {
+            rows.getChildAt(it).findViewById<TextView>(R.id.rowTitle).text.toString()
+        }
+        assertTrue("shelves are not Turkish: $shelfTitles",
+            shelfTitles.contains("Favoriler"))
+
         // Focus must land on a card, not nowhere, so the remote works at once.
         assertTrue(
             "nothing took focus on start",

@@ -126,6 +126,7 @@ class UiInflationTest {
         val items = activity.findViewById<ViewGroup>(R.id.items)
         assertTrue("expected several settings rows", items.childCount >= 6)
 
+        // Rows: 0 wallpaper, 1 ambient, 2 parallax, ...
         val before = com.bcb58.mialauncher.data.Prefs.get(activity).parallaxFocus
         items.getChildAt(2).performClick()
         assertEquals(!before, com.bcb58.mialauncher.data.Prefs.get(activity).parallaxFocus)

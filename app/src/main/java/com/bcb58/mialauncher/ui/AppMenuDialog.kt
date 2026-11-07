@@ -69,7 +69,7 @@ class AppMenuDialog(
         addRow(
             container,
             if (isFavorite) R.string.menu_remove_favorite else R.string.menu_add_favorite,
-            R.drawable.ic_star
+            if (isFavorite) R.drawable.ic_star_filled else R.drawable.ic_star
         ) {
             val added = prefs.toggleFavorite(entry.id)
             Launch.toast(

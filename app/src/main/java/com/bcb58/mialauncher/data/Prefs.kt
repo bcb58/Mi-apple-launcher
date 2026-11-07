@@ -106,7 +106,10 @@ class Prefs private constructor(private val sp: SharedPreferences) {
 
         fun get(context: Context): Prefs = instance ?: synchronized(this) {
             instance ?: Prefs(
-                context.applicationContext
+                // During Application.attachBaseContext there is no application
+                // context yet, and the locale wrapper reads prefs from exactly
+                // there, so fall back to the context we were handed.
+                (context.applicationContext ?: context)
                     .getSharedPreferences(FILE, Context.MODE_PRIVATE)
             ).also { instance = it }
         }

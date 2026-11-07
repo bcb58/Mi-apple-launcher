@@ -33,7 +33,8 @@ geçer ve altına gölge düşer:
 - Tüm uygulamalar ızgarası
 - Uzun basınca (veya MENU tuşu) kart menüsü: aç, favori, gizle,
   uygulama bilgisi, kaldır
-- 5 duvar kağıdı, efektleri açma/kapatma, Türkçe ve İngilizce arayüz
+- Arayüz tamamen **Türkçe** — cihazın sistem dili ne olursa olsun
+- 5 duvar kağıdı, efektleri açma/kapatma
 
 **Hız** — 2 GB RAM'li bir kutuda akıcı kalması için:
 - Uygulama listesi tek bir sekmeyle ayrılmış metin dosyasına yazılır;
@@ -93,6 +94,7 @@ adb shell pm enable com.google.android.tvlauncher
 | `minSdk` | 21 — Mi Box S 1. nesil ve eski Android TV'ler de dahil |
 | `targetSdk` / `compileSdk` | 34 |
 | Kumanda | D-pad, MENU, HOME, geri; dokunmatik gerekmez |
+| Arayüz dili | Türkçe (tek dil; sistem diline bakılmaz) |
 
 ---
 
@@ -103,6 +105,14 @@ adb shell pm enable com.google.android.tvlauncher
 ./gradlew lintDebug
 ./gradlew assembleDebug
 ```
+
+### İkonlar
+Arayüz ikonları, tvOS'un SF Symbols dilindeki gibi ince konturlu, yuvarlak
+uçlu ve geometriktir. Apple'ın kendi varlıkları **paketlenmemiştir** — SF
+Symbols lisansı yalnızca Apple platformlarında kullanıma izin verir. Onun
+yerine ISC lisanslı [Lucide](https://lucide.dev) setinden ikonlar, Android
+`VectorDrawable`'a dönüştürülüp TV izleme mesafesi için 1.7 birim kontura
+inceltilerek kullanıldı. Ayrıntı: [`NOTICE`](NOTICE).
 
 Testler **Robolectric** ile çalışır ve gerçek `MainActivity`'yi başlatıp ana
 ekranı PNG'ye çizer (`app/build/screenshots/`). Emülatörsüz olarak düzen
@@ -141,7 +151,14 @@ app/src/main/java/com/bcb58/mialauncher/
 - Kanallar (`TvProvider` channels) ve "İzlemeye devam et" desteklenmez.
 - Uygulamalar kendi `android:banner` görselini sunuyorsa o kullanılır; yoksa
   simgesinden renk çıkarılıp degrade bir kart üretilir.
+- Arayüz yalnızca Türkçedir; dil seçeneği yoktur. İngilizce istenirse
+  `app/src/main/res/values-en/strings.xml` eklemek yeterlidir.
+- Gerçek Apple TV'nin üst menüsü ikonsuzdur, yalnızca metin kullanır. Burada
+  sekmelerde ikon var; istenirse `view_top_bar.xml` içinden kaldırılabilir.
 
 ## Lisans
 
-MIT — `LICENSE` dosyasına bakın.
+MIT — [`LICENSE`](LICENSE). Üçüncü taraf bildirimleri: [`NOTICE`](NOTICE).
+
+Apple TV, tvOS ve SF Symbols, Apple Inc.'in ticari markalarıdır. Bu proje
+Apple ile ilişkili değildir ve hiçbir Apple varlığı içermez.
