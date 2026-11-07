@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/row_gap">
+
+    <TextView
+        android:id="@+id/rowTitle"
+        style="@style/RowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        android:paddingBottom="8dp" />
+
+    <com.bcb58.mialauncher.ui.TvRowRecyclerView
+        android:id="@+id/rowItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/overscan_horizontal"
+        android:paddingEnd="@dimen/overscan_horizontal"
+        android:paddingTop="@dimen/card_overshoot"
+        android:paddingBottom="@dimen/card_overshoot"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <com.bcb58.mialauncher.ui.FocusCardView
+        android:id="@+id/card"
+        android:layout_width="@dimen/card_banner_width"
+        android:layout_height="@dimen/card_banner_height"
+        android:background="@drawable/card_placeholder"
+        app:cardCornerRadius="@dimen/card_radius">
+
+        <ImageView
+            android:id="@+id/art"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop" />
+    </com.bcb58.mialauncher.ui.FocusCardView>
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/CardLabel"
+        android:layout_width="@dimen/card_banner_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp" />
+</LinearLayout>

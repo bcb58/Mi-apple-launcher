@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sheet_background"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="10dp">
+
+        <com.bcb58.mialauncher.ui.FocusCardView
+            android:layout_width="96dp"
+            android:layout_height="54dp"
+            android:background="@drawable/card_placeholder"
+            android:focusable="false"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/headerArt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:scaleType="centerCrop" />
+        </com.bcb58.mialauncher.ui.FocusCardView>
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

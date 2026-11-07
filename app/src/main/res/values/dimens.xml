@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 5% TV overscan safe area on every edge. -->
+    <dimen name="overscan_horizontal">48dp</dimen>
+    <dimen name="overscan_vertical">27dp</dimen>
+
+    <dimen name="topbar_height">76dp</dimen>
+
+    <dimen name="card_banner_width">216dp</dimen>
+    <dimen name="card_banner_height">122dp</dimen>
+    <dimen name="card_tile_width">150dp</dimen>
+    <dimen name="card_tile_height">85dp</dimen>
+    <dimen name="card_radius">13dp</dimen>
+    <dimen name="card_gap">18dp</dimen>
+    <!-- Room for the 1.11x focus scale to breathe without clipping. -->
+    <dimen name="card_overshoot">14dp</dimen>
+
+    <dimen name="row_gap">26dp</dimen>
+    <dimen name="row_title_size">15sp</dimen>
+    <dimen name="card_label_size">13sp</dimen>
+    <dimen name="tab_text_size">17sp</dimen>
+    <dimen name="clock_text_size">17sp</dimen>
+</resources>
